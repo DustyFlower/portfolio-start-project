@@ -13,7 +13,6 @@ export const Testimony = () => {
                 <Icon iconId={'quote'}/>
                 <Slider/>
             </FlexWrapper>
-            <input type="password"/>
         </StyledTestimony>
     );
 };
