@@ -26,6 +26,10 @@ const StyledHeaderMenu = styled.nav`
         gap: 30px;
         justify-content: center;
     }
+    
+    @media ${theme.media.tablet} {
+        display: none;
+    }
 `
 
 const Link = styled.a`
@@ -45,6 +49,7 @@ const Mask = styled.span`
     overflow-y: hidden;
 /*    outline: 1px solid red;*/
     color: ${theme.colors.accent};
+    transition: all .2s;
 
     & + & {
         top: 50%;
