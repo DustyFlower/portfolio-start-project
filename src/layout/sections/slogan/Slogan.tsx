@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {FC} from 'react';
 import styled from 'styled-components';
 import {SectionTitle} from '../../../components/SectionTitle';
 import {Button} from '../../../components/Button';
 import {Container} from '../../../components/Container';
 import {FlexWrapper} from '../../../components/FlexWrapper';
 
-export const Slogan = () => {
+export const Slogan:FC = () => {
     return (
         <StyledSlogan>
             <Container>
@@ -21,4 +21,8 @@ export const Slogan = () => {
 const StyledSlogan = styled.section`
     min-height: 30vh;
     background-color: #ffe1f5;
+    
+    ${SectionTitle} {
+        margin-bottom: 80px;
+    }
 `
