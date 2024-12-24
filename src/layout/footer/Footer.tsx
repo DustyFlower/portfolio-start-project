@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {Icon} from '../../components/icon/Icon';
 import {FlexWrapper} from '../../components/FlexWrapper';
 import {theme} from '../../styles/Theme';
+import {font} from '../../styles/Common';
 
 export const Footer = () => {
     return (
@@ -45,9 +46,7 @@ const StyledFooter = styled.footer`
 `
 
 const Name = styled.span`
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 22px;
-    font-weight: 700;
+    ${font({family: " 'Josefin Sans', sans-serif", weight: 700, Fmax: 22, Fmin: 16})}
     letter-spacing: 3px;
 `
 
