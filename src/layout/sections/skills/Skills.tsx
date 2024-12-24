@@ -48,6 +48,7 @@ export const Skills:FC = () => {
                     {skillData.map((s, index) => (
                         <Skill key={index} iconId={s.iconId} title={s.title} description={s.description}/>
                     ))}
+
                 </FlexWrapper>
             </Container>
         </S.Skills>
