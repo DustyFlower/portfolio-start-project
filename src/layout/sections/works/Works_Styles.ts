@@ -3,10 +3,17 @@ import styled from 'styled-components';
 import {theme} from '../../../styles/Theme';
 import {Link} from '../../../components/Link';
 import {Button} from '../../../components/Button';
+import {SectionTitle} from '../../../components/SectionTitle';
+import {Container} from '../../../components/Container';
 
 const Works = styled.section`
     ${FlexWrapper} {
         gap: 30px;
+    }
+    ${Container} {
+        ${SectionTitle} {
+            margin-bottom: 80px;
+        }
     }
 `
 
@@ -22,7 +29,7 @@ const Work = styled.div`
             margin-left: 20px;
         }
     }
-    
+
     @media ${theme.media.desktop} {
         max-width: 540px;
     }
