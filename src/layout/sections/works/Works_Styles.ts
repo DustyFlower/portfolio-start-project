@@ -7,6 +7,8 @@ import {SectionTitle} from '../../../components/SectionTitle';
 import {Container} from '../../../components/Container';
 
 const Works = styled.section`
+    position: relative;
+    
     ${FlexWrapper} {
         gap: 30px;
     }
