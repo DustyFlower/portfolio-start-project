@@ -4,13 +4,13 @@ import {font} from '../../styles/Common';
 
 const Footer = styled.footer`
     position: relative;
-    
+
     background-color: ${theme.colors.primaryBg};
     padding: 40px 0;
 `
 
 const Name = styled.span`
-    ${font({family: " 'Josefin Sans', sans-serif", weight: 700, Fmax: 22, Fmin: 16})}
+    ${font({family: ' \'Josefin Sans\', sans-serif', weight: 700, Fmax: 22, Fmin: 16})}
     letter-spacing: 3px;
 `
 
@@ -33,7 +33,7 @@ const SocialIconLink = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition: ${theme.animations.transition};
     color: ${theme.colors.accent};
 
     &:hover {

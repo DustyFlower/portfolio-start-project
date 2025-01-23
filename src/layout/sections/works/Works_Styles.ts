@@ -8,10 +8,11 @@ import {Container} from '../../../components/Container';
 
 const Works = styled.section`
     position: relative;
-    
+
     ${FlexWrapper} {
         gap: 30px;
     }
+
     ${Container} {
         ${SectionTitle} {
             margin-bottom: 80px;
@@ -21,8 +22,6 @@ const Works = styled.section`
 
 const Work = styled.div`
     background-color: ${theme.colors.secondaryBg};
-    width: 330px;
-    flex-grow: 1;
 
     ${Link} {
         padding: 10px 0;
@@ -30,10 +29,6 @@ const Work = styled.div`
         & + ${Link} {
             margin-left: 20px;
         }
-    }
-
-    @media ${theme.media.desktop} {
-        max-width: 540px;
     }
 `
 
@@ -45,7 +40,8 @@ const ImageWrapper = styled.div`
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -40%);
+        transition: ${theme.animations.transition};
 
         &::before {
             width: 100%;
@@ -61,29 +57,31 @@ const ImageWrapper = styled.div`
         top: 0;
         bottom: 0;
         background: rgba(0, 0, 0, 0.3);
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(2px);
         opacity: 0;
+        transition: ${theme.animations.transition};
     }
 
     &:hover {
         &::before {
-           opacity: 1;
+            opacity: 1;
+        }
+
+        ${Button} {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    @media ${theme.media.tablet} {
+        &::before {
+            opacity: 1;
         }
 
         ${Button} {
             opacity: 1;
         }
     }
-    
-    @media ${theme.media.tablet} {
-            &::before {
-                opacity: 1;
-            }
-
-            ${Button} {
-                opacity: 1;
-            }
-        }
 `
 
 const Image = styled.img`

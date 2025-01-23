@@ -28,7 +28,7 @@ export const Footer:FC = () => {
                     {socialItemData.map((i, index) => (
                         <S.SocialItem key={index}>
                             <S.SocialIconLink>
-                                <Icon height={'21px'} width={'21px'} iconId={i.iconId} viewBox={'0 0 21px 21px'}/>
+                                <Icon height={'21'} width={'21'} iconId={i.iconId} viewBox={'0 0 21 21'}/>
                             </S.SocialIconLink>
                         </S.SocialItem>
                     ))}
